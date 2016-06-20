@@ -1,13 +1,29 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Login Success</title>
 <link href="/StudentEnrollmentWithJDBC/assets/css/bootstrap-united.css"
 	rel="stylesheet" />
 
+<style>
+.error {
+	color: #ff0000;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+
+.errorblock {
+	color: #000;
+	background-color: #ffEEEE;
+	border: 3px solid #ff0000;
+	padding: 8px;
+	margin: 16px;
+}
+</style>
+<title>Student Enrollment Login</title>
 </head>
 <body>
 	<script src="/StudentEnrollmentWithJDBC/jquery-1.8.3.js">
@@ -34,12 +50,12 @@
 			</form>
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="/StudentEnrollmentWithJDBC">Home</a></li>
-				<li><a href="content/signup.jsp">Signup</a></li>
-				<li class="active"><a href="content/login.jsp">Login</a></li>
+				<li><a href="signup.jsp">Signup</a></li>
+				<li><a href="login.jsp">Login</a></li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle"
 					data-toggle="dropdown">Explore<b class="caret"></b></a>
 					<ul class="dropdown-menu">
-						<li><a href="#">Contact us</a></li>
+						<li class="active"><a href="#">Contact us</a></li>
 						<li class="divider"></li>
 						<li><a href="#">Further Actions</a></li>
 					</ul></li>
@@ -48,30 +64,31 @@
 		<!-- /.nav-collapse -->
 	</div>
 
-	<!-- 
-	<legend>Student Enrollment Login Success</legend>
-	 -->
-	<div class="panel panel-success">
-		<div class="panel-heading">
-			<h3 class="panel-title">Student Enrollment Login success</h3>
-		</div>
-		<div class="panel-body">
-			<div class="alert alert-dismissable alert-success">
-				<button type="button" class="close" data-dismiss="alert">×</button>
-				<strong>Well done!</strong> You successfully logged-into the system.
-				Now you can explore the complete features!
+	<div class="container">
+		<div class="jumbotron">
+			<div>
+				<h1>Contact Us</h1>
+				<p>Feel free to question us, if you are having any problem!</p>
 			</div>
 		</div>
+
+		<div></div>
 	</div>
-	<div>
-		<p>
-			<a class="btn btn-primary" href="../StudentController">List All
-				Students Data</a>
-		</p>
+
+	<div style="clear: both">
+		<h2 style="float: left">Student Service</h2>
+		<br />
+		<br />
+		<br />
+		<h4 style="float: left">Phone Number: 014-245874</h4>
+		<br />
+		<h4 style="float: left">Email Id: studentonline@edu.service</h4>
+		<br />
+		<h4 style="float: left">Location:
+			YouNowKnowLoc,Jandinaball,Serbia</h4>
+
 	</div>
-	<div></div>
-	<a class="btn btn-primary" href="content/login.jsp">Login as
-		different user?</a>
+	<hr />
 
 
 </body>

@@ -1,14 +1,23 @@
-package com.github.elizabetht.model;
+package com.shreetesh.model;
 
 import java.util.Date;
 
 public class Student {
+	private Integer studentId;
 	private String userName;
 	private String firstName;
 	private String lastName;
 	private String password;
 	private String emailAddress;
 	private Date dateOfBirth;
+
+	public Integer getStudentId() {
+		return studentId;
+	}
+
+	public void setStudentId(Integer studentId) {
+		this.studentId = studentId;
+	}
 
 	public String getUserName() {
 		return userName;
@@ -57,4 +66,15 @@ public class Student {
 	public void setDateOfBirth(Date dateOfBirth) {
 		this.dateOfBirth = dateOfBirth;
 	}
+
+	@Override
+	public String toString() {
+		return "Student [studentId=" + studentId + ", userName=" + userName
+				+ ", firstName=" + firstName + ", lastName=" + lastName
+				+ ", password=" + password + ", emailAddress=" + emailAddress
+				+ ", dateOfBirth=" + dateOfBirth + "]";
+	}
+
+
+
 }

@@ -5,7 +5,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<link href="/StudentEnrollmentWithJDBC/assets/css/bootstrap-united.css" rel="stylesheet" />
+<link href="/StudentEnrollmentWithJDBC/assets/css/bootstrap-united.css"
+	rel="stylesheet" />
 
 <style>
 .error {
@@ -79,11 +80,12 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6">
-						<form id="myForm" method="post"
-							class="bs-example form-horizontal" action="../StudentController">
+						<form id="myForm" method="post" class="bs-example form-horizontal"
+							action="../StudentController">
+							<c:out value="yahan jan6 ki nai"/>
 							<fieldset>
 								<legend>Student Enrollment Login Form</legend>
-								
+
 								<input type="hidden" name="pageName" value="login">
 
 								<div class="form-group">
@@ -98,8 +100,8 @@
 								<div class="form-group">
 									<label for="passwordInput" class="col-lg-3 control-label">Password</label>
 									<div class="col-lg-9">
-										<input type="password" class="form-control"
-											name="password" id="passwordInput" placeholder="Password" />
+										<input type="password" class="form-control" name="password"
+											id="passwordInput" placeholder="Password" />
 									</div>
 								</div>
 
@@ -114,6 +116,10 @@
 					</div>
 				</div>
 			</div>
+		</div>
+		<div class="panel-footer" align="center">
+			--> <font style="color: #111">Copyright @2016 BR All Rights
+				Reserved.BazingaRtshe </font>
 		</div>
 	</div>
 
